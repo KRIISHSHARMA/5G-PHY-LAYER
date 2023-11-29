@@ -24,10 +24,24 @@ more points, and therefore will lead to increased number of errors for a fixed S
 
 ![Screenshot from 2023-11-29 18-14-49](https://github.com/KRIISHSHARMA/5G-PHY-LAYER/assets/86760658/03072a33-8ec9-470e-a685-ffa78e85067c)
 
+### CQI (channel quality indicator)
+- gNB determines the MCS index based on CQI index that gNB got from UE to define the possible modulation orders and coding schemes to use for data transmission. Getting a higher CQI index indicates a better signal quality, and the gNB can transmit a larger transport block size.
+  
+- However, since CQI is a 4-bit integer ranging between 0 to 15 and MCS is a 5-bit integer ranging between 0 to 31, there will be more than one MCS value that corresponds to a certain CQI value in many cases. Therefore, the scheduler must determine which MCS value corresponds to the received CQI value
+
+- The chosen modulation order and code rate will be used for transmission
+on the Physical Downlink Shared Channel (PDSCH). Then the MCS value
+will be sent among the Downlink Control Information (DCI), to enable the
+UE for correct demodulation
+
+![Screenshot from 2023-11-29 19-03-38](https://github.com/KRIISHSHARMA/5G-PHY-LAYER/assets/86760658/5825f699-ad54-4d0c-8bed-c01a3afadc0e)
+
 ### MCS 5G characteristics 
 - Modulation and Coding Scheme (MCS) defines the numbers of useful bits per symbols
 - MCS is change by gNB based on **link adaptation algorithm**
 - MCS information is provided to UE using DCI
+- 5G NR supports QPSK,16 QAM, 64 QAM and 256 QAM modulation for PDSCH
+There are about 32 **MCS Indexes** (gNB determines the MCS index based on **CQI index** that gNB got from UE to define the possible modulation orders and coding schemes to use for data transmission. Getting a higher CQI index indicates a better signal quality, and the gNB can transmit a larger transport block size.)  (0-31) are defined and MCS Index 29,30 and 31 are reserved and used for re-transmission
 
 
 
