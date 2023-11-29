@@ -24,7 +24,10 @@ more points, and therefore will lead to increased number of errors for a fixed S
 
 ![Screenshot from 2023-11-29 18-14-49](https://github.com/KRIISHSHARMA/5G-PHY-LAYER/assets/86760658/03072a33-8ec9-470e-a685-ffa78e85067c)
 
-
+### MCS 5G characteristics 
+- Modulation and Coding Scheme (MCS) defines the numbers of useful bits per symbols
+- MCS is change by gNB based on **link adaptation algorithm**
+- MCS information is provided to UE using DCI
 
 
 
