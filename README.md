@@ -20,6 +20,10 @@ more points, and therefore will lead to increased number of errors for a fixed S
 ![Screenshot from 2023-11-29 18-06-51](https://github.com/KRIISHSHARMA/5G-PHY-LAYER/assets/86760658/effaad72-b7f3-4e5e-998d-5a0a4bcb703d)
 ![Screenshot from 2023-11-29 18-07-16](https://github.com/KRIISHSHARMA/5G-PHY-LAYER/assets/86760658/21329dc8-58ac-435e-8e56-9ca4b752c47b)
 
+ - with 16QAM  it can be 4 bits, with 64QAM it can be 6 bits and with 256QAM it can 8 bits. These 16, 64 and 256 are know as modulation order of QAM Modulation and The no. of bits for each modulation order can be calculated using following formula.
+
+![Screenshot from 2023-11-29 18-14-49](https://github.com/KRIISHSHARMA/5G-PHY-LAYER/assets/86760658/03072a33-8ec9-470e-a685-ffa78e85067c)
+
 
 
 
