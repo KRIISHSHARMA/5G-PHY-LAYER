@@ -43,9 +43,20 @@ UE for correct demodulation
 - 5G NR supports QPSK,16 QAM, 64 QAM and 256 QAM modulation for PDSCH
 There are about 32 **MCS Indexes** (gNB determines the MCS index based on **CQI index** that gNB got from UE to define the possible modulation orders and coding schemes to use for data transmission. Getting a higher CQI index indicates a better signal quality, and the gNB can transmit a larger transport block size.)  (0-31) are defined and MCS Index 29,30 and 31 are reserved and used for re-transmission
 
+### MCS tables
+- There are 28 possible values, and 3 reserved values, By increasing the MCS value, the Transfer Block Size (TBS) of the transmitted subframe is increased, which represent the useful bits in a subframe. As a consequence, higher data rates can be achieved on the expense of signal robustness against noise and interference. 
 
+- 64 QAM table may be used when gNB or UE is not supporting 256 QAM or in poor radio connection where 256 QAM table decoding is not successful and gNB needs to allocate QPSK order modulation
 
+![Screenshot from 2023-11-29 19-35-17](https://github.com/KRIISHSHARMA/5G-PHY-LAYER/assets/86760658/6bcfd5ef-4aad-470d-99cf-662743d065f7)
 
+- 256 QAM table may be used whenever 256QAM is to allocated in very good radio condtions
+
+![Screenshot from 2023-11-29 19-36-24](https://github.com/KRIISHSHARMA/5G-PHY-LAYER/assets/86760658/b0a09aa4-7cba-405a-9146-164011ca3efc)
+
+- Low spectral efficiency (Low SE) 64 QAM table is suitable for applications which need reliable data transfer, e.g. applications belonging to the URLLC category. This table includes MCS which have low Spectral Efficiency  i.e. a reduced coding rate which increase channel coding redundancy
+
+![Screenshot from 2023-11-29 19-36-55](https://github.com/KRIISHSHARMA/5G-PHY-LAYER/assets/86760658/ef140bfc-bdd8-4e03-bb07-33426f91cdcd)
 
 
 
