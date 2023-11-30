@@ -63,8 +63,8 @@ There are about 32 **MCS Indexes** (gNB determines the MCS index based on **CQI 
 
 - example illustrated that MSC table section can be controlled using only Physical layer signalling once the initial RRC signalling has been completed 
   - consider a UE has been configured with parameter PSCH-config with MSC-TABLE : **QAM256** and allocated an MSC-C-RNTI along with traditional C-RNTI
-  - if the UE receives a PDSCH resource allocation using DCI format 1_1 with the C-RNTI then the UE will select 256QAM MSC TABLE
-  - if the UE receives a PDSCH resorce allocation using DCI format 1_0 with C-RNTI then the UE will select the 64QAM MSC TABLE
+  - if the UE receives a PDSCH resource allocation using DCI format 1_1( is used for the scheduling of PDSCH in one cell.) with the C-RNTI then the UE will select 256QAM MSC TABLE
+  - if the UE receives a PDSCH resorce allocation using DCI format 1_0( is used for the scheduling of PDSCH in one DL cell.) with C-RNTI then the UE will select the 64QAM MSC TABLE
   - if the same UE receives a PDSCH resorce allocation using DCI format 1_1 or 1_0 but with MSC-C-RNTI then the UE will select the LSE MSC table 
 
 ![Screenshot from 2023-11-30 10-25-07](https://github.com/KRIISHSHARMA/5G-PHY-LAYER/assets/86760658/a625271e-00a7-4bad-98e8-c26226255e01)
