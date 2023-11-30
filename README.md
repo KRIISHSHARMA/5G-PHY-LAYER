@@ -88,4 +88,9 @@ There are about 32 **MCS Indexes** (gNB determines the MCS index based on **CQI 
    2. LDPC code in PDSCH 
 - Control information is typically transmitted with a smaller amount of information bits and with a shorter codeword length. Control information is also typically transmitted with a lower code rate while good performance in a lower BLER regime is required.
 
+## CSI (channel state information) 
+- It refers to the information about the wireless channel between the transmitter and the receiver .
+- It is used to optimize the transmission and reception of data
+- Following are the components of CSI in NR
+  - [**CQI(channel Quality Information)**]().
 
