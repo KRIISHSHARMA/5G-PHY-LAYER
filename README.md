@@ -58,8 +58,9 @@ There are about 32 **MCS Indexes** (gNB determines the MCS index based on **CQI 
 
 ![Screenshot from 2023-11-29 19-36-55](https://github.com/KRIISHSHARMA/5G-PHY-LAYER/assets/86760658/ef140bfc-bdd8-4e03-bb07-33426f91cdcd)
 
+![Screenshot from 2023-11-30 09-57-22](https://github.com/KRIISHSHARMA/5G-PHY-LAYER/assets/86760658/2ce58b5d-5acd-4c58-94c4-ef2bf1ed1be3)
 
-
+- [good video on MSC TABLE](https://www.youtube.com/watch?v=QBiBPbME5tY)
 
 
 
