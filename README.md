@@ -96,7 +96,7 @@ There are about 32 **MCS Indexes** (gNB determines the MCS index based on **CQI 
   - **PMI(Precoding Matrix indicator)** : The Precoding Matrix Indicator (PMI) report is the device's recommendation (a 2-bit or 4-bit value depending on the number of antenna ports) regarding what precoding matrix to use in PDSCH
     
   - **CRI(CSI-RS RESORCE INDICATOR)**
-    - It is a reference signal (RS) that is used in the Downlink (DL) direction in 5G NR, for the purpose of Channel Sounding and used to measure the characteristics of a radio channel so that it can use correct modulation, code rate, beam forming etc. UEs will use these reference signals to measure the quality of the DL channel and report this in the UL through the **CQI Reports** [reference](https://info-nrlte.com/tag/cri/)
+    - It is a reference signal (RS) that is used in the Downlink (DL) direction in 5G NR, for the purpose of Channel Sounding and used to measure the characteristics of a radio channel so that it can use correct modulation, code rate, beam forming etc. `UEs will use these reference signals to measure the quality of the DL channel and report this in the UL through the` **CQI Reports** [reference](https://info-nrlte.com/tag/cri/)
     
    ![Screenshot from 2023-11-30 20-46-36](https://github.com/KRIISHSHARMA/5G-PHY-LAYER/assets/86760658/fe2dc20c-0dca-4368-a8ec-481d5137afd2)
 
@@ -108,5 +108,6 @@ There are about 32 **MCS Indexes** (gNB determines the MCS index based on **CQI 
     - max RI is related to number of antenna , Maximum RI is same as number of antenna on each side if the number of Tx antenna and Rx antenna is same. If the number of Tx and Rx are different, the one with less antenna is the same as Max achievable RI.
     - Max RI means "No Correlation between the antenna", "No interference to each other", "Best Performance". For example, in case of 2x2 MIMO, the RI value can be 1 or 2. When the value 2 in this case means "No Correlation between the antenna", "No interference to each other", "Best Performance". If the value is 1, it implies that the signal from the two Tx antenna is percieved by UE to be like single signal from single Antenna, which means the worst performance. [reference](https://www.sharetechnote.com/html/Handbook_LTE_RI.html)
 
- 
+## FRAME STRUCTURE 
+
 
