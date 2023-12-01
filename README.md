@@ -319,6 +319,7 @@ There are about 32 **MCS Indexes** (gNB determines the MCS index based on **CQI 
 ## reference frequency calculation F<sub>ref</sub>
 ![Screenshot from 2023-11-24 19-47-28](https://github.com/KRIISHSHARMA/5G_TECHNOLOGY_ARCHITECTURE_AND_PROTOCOLS/assets/86760658/e48cd536-6c5e-42f2-9935-e5a939341c92)
 
+- absoluteFrequencyPointA: It represents the common reference point A, this reference point is the 0th RB of 273 RBs, which is the center point of RB#0.
 - global raster is the min distance in terms of frequency that can be there between reference frequencies
 - channel raster is the minimum distance between center frequencies of two channels 
 
@@ -328,7 +329,7 @@ There are about 32 **MCS Indexes** (gNB determines the MCS index based on **CQI 
 
 ![Screenshot from 2023-11-24 21-12-46](https://github.com/KRIISHSHARMA/5G_TECHNOLOGY_ARCHITECTURE_AND_PROTOCOLS/assets/86760658/d122dd44-b9eb-4c9d-ac4b-895b19b6e3ab)
 
-
+- [ FOR CALCULATING SSB POSITIONING](https://www.techplayon.com/5g-nr-ssb-positioning-time-and-frequency-resources/)
 
 
 
