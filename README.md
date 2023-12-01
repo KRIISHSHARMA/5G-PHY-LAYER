@@ -256,9 +256,19 @@ There are about 32 **MCS Indexes** (gNB determines the MCS index based on **CQI 
 ## OFDM 
 - after mapping symbols on physical antenna the symbols are mapped into the OFDM waveform together with corresponding CP 
 
+## SSB (SYNCHRONIZATION SIGNAL BLOCK) 
+- SSB contains
+  1. Synchronization signal : PSS , SSS
+  2. PBCH : PBCH DMRS and PBCH(DATA)
+- SSB is transmitted in 4 OFDM symbols in time domain and 240(20RBs) sub carriers in frequency domain
+- 1 symbol PSS , 1 symbol SSS and a 2 symbol PBCH
+- PSS occupies 1st OFDM symbol and span over 127 sub carriers
+- SSS is located in 3rd OFDM symbol and span over 127 sub carriers
+- PBCH occupies 2 full OFDM symbols(2nd and 4th) spanning 240 subcarriers and in third OFDM symbol spaning 48 subcarriers below and above SSS totaling to (240 + 48 + 48 + 240) = 576 sub carriers 
+- In that PBCH DM-RS occupies 144 REs
+- PBCH DATA ( 576-144 = 432 REs)
 
-
-
+![64](https://github.com/KRIISHSHARMA/5G-PHY-LAYER/assets/86760658/84fd14cc-8f8f-4414-a03a-58ac5fc1eb11)
 
 
 
