@@ -140,9 +140,12 @@ There are about 32 **MCS Indexes** (gNB determines the MCS index based on **CQI 
 ![Screenshot from 2023-12-01 08-28-27](https://github.com/KRIISHSHARMA/5G-PHY-LAYER/assets/86760658/a0aa5a4f-940a-4a2f-ae35-736c7ce9a121)
 ![Screenshot from 2023-12-01 08-28-27](https://github.com/KRIISHSHARMA/5G-PHY-LAYER/assets/86760658/b0aeeb1a-2acc-461b-a3f0-7e4efe16593e)
 
-- **RF SPECTRUM**
+### RF SPECTRUM
   - Channel Bandwidth(CBW) is about [ N_RB x NumOfSubcarrier x SCS + GuardBand x 2 ]
-- [for estimating RF bandwidth](https://www.sharetechnote.com/html/5G/5G_FR_Bandwidth.html#Spectrum_and_Bandwidth)
+[for estimating RF bandwidth](https://www.sharetechnote.com/html/5G/5G_FR_Bandwidth.html#Spectrum_and_Bandwidth)
+
+### MINI SLOTS
+
 
 ## PHYSICAL LAYER PROCESSING
 
