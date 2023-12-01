@@ -221,16 +221,36 @@ There are about 32 **MCS Indexes** (gNB determines the MCS index based on **CQI 
 
 ![Screenshot from 2023-12-01 16-27-25](https://github.com/KRIISHSHARMA/5G-PHY-LAYER/assets/86760658/4ed9c4e2-24e6-4a2a-8230-b00dd194c49b)
 
+## LAYER MAPPING 
+- NR supports spacial multiplexing meaning it can transmit more than 1 layer of data simulatneously using multiple antenna technologies
+- The complex valued modulation symbols that needs to be transmited or mapped on one ore more layers
+- For ex 
+![Screenshot from 2023-12-01 16-54-14](https://github.com/KRIISHSHARMA/5G-PHY-LAYER/assets/86760658/3f12c7c7-b97d-4c8a-81ee-5cd3e305cf7b)
 
+- The incoming symbols are mapped to the corresponding layers so every 4th symbol goes to layer 1 and every 4th symbol goes to layer 2 so on
 
+## ANTENNA MAPPING AND PRECODING
+- After mapping data to different layers the next step is to map to corresponding **virtual antenna ports**
+- In order for the different data layers to be decoded as if they are different layers on the receivers side they need to be precoded
+- the precoding process maps the different numbers of layers into corresponding number of virtual ports using **Precoded matrix**
+- The **Precoded matrix** is selected based on what is the current channel condition
+- Precoding is the process which helps use the multiple antenna system and the understanding of the channel knowledge to make multiple layers possible
 
+![Screenshot from 2023-12-01 17-02-19](https://github.com/KRIISHSHARMA/5G-PHY-LAYER/assets/86760658/9fecceb3-2f87-4432-a481-a3c23d99c8d0)
 
+## RESOURCE AND PHYSICAL ANTENNA MAPPING 
+- From the previous step we have the symbols for each virtual antenna port
+- The resouce block mapping takes modulation symbols to be transmitted on each antenna port and maps to the set of available **RESOUCRE ELEMENTS** in the set of **RESOURCE BLOCKS** assigned by the map scheduler for current transmission
+- The RBs are shared together with **control signals and reference signals**
+- The other RBs are used for TBs for actual data transmission
+- So the Number of physical antennas is usually larger than Number of vitual antenna blocks
+- virtual ports mapping to phyical antenna port is also done in this
+- we take the data which mapped to different vitual antenna ports and put them into the right time and frequency RBs corresponse to the decisions made by the schedular and we also put control signals here and map it to physical antenna ports 
 
+![Screenshot from 2023-12-01 17-29-48](https://github.com/KRIISHSHARMA/5G-PHY-LAYER/assets/86760658/05928d74-a28f-4eb6-9209-47fff167cfb4)
 
-
-
-
-
+## OFDM 
+- after mapping symbols on physical antenna the symbols are mapped into the OFDM waveform together with corresponding CP 
 
 
 
