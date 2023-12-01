@@ -196,10 +196,30 @@ There are about 32 **MCS Indexes** (gNB determines the MCS index based on **CQI 
 
 ![Screenshot from 2023-12-01 16-02-54](https://github.com/KRIISHSHARMA/5G-PHY-LAYER/assets/86760658/c9385637-755d-447c-993e-a49c025537ec)
 
+## LDPC coding 
+- While the **CRC** helps in error detection , **LDPC** coding helps in error correction
+- **Channel Coding** is the process of adding additional bits that makes the information bits ressislient to noise
+- Some of the errors can be corrceted without retransmission using channel coding process channel coding uses LDPC coding
+- In this step we take each code block and apply LDPC coding to it to improve resiliency and to be able to correct some of the smaller errors
 
+![Screenshot from 2023-12-01 16-13-30](https://github.com/KRIISHSHARMA/5G-PHY-LAYER/assets/86760658/a85f8271-36a4-429d-af32-6b9337c15a26)
 
+## RATE MATCHING 
+- Not all of the output bits of the LDPC coding step can be transmited in a given transmission interval , so after LDPC coding proccess rate matching takes the coded bits extracts the exact set of bits that can be transmitted in a given transmission interval
+-  Rate matching is performed seperataly for each code block
 
+## SCRAMBLING 
+- A UE might be hearing multiple gNBs simultaneously
+- So how can the UE differentiate the incoming signals into seperate gNBs at very low layer of protocol stack(PHY layer)
+- In scarmbling , the block of code is multiplied by a scrambling sequence
+- Now the device that knows this sequence can see the info corresponding to the correct gNB as a signal but all the interfaring gNBs will use a different scrambling code so info from them will look like pure noise to the UE
 
+![Screenshot from 2023-12-01 16-24-54](https://github.com/KRIISHSHARMA/5G-PHY-LAYER/assets/86760658/5ef638c1-f4fd-4ea1-9807-afd20f73562f)
+
+## MODULATION 
+- QPSK , 16QAM , 64QAM and 256QAM in both UL and DL (scroll up)
+
+![Screenshot from 2023-12-01 16-27-25](https://github.com/KRIISHSHARMA/5G-PHY-LAYER/assets/86760658/4ed9c4e2-24e6-4a2a-8230-b00dd194c49b)
 
 
 
