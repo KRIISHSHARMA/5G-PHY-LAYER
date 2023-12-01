@@ -143,3 +143,54 @@ There are about 32 **MCS Indexes** (gNB determines the MCS index based on **CQI 
 - **RF SPECTRUM**
   - Channel Bandwidth(CBW) is about [ N_RB x NumOfSubcarrier x SCS + GuardBand x 2 ]
 - [for estimating RF bandwidth](https://www.sharetechnote.com/html/5G/5G_FR_Bandwidth.html#Spectrum_and_Bandwidth)
+
+## PHYSICAL LAYER PROCESSING
+
+- DCI provides device with nesseccary info and decoding of DL data
+- UCI provides scheduler and the HARQ protocol about information at the device
+- PBCH carries part of the system info that the devices use to access the network
+- PDSCH is the main channel for data transmission to the devices
+- PDCCH used for DL control info like scheduling decisions
+- PUSCH main channel for data transmission from the device side
+- PUCCH used by device for HARQ acknowledment indicating whether the transport block successfully or unsuccessfully
+- PRACH used for RACH procedure
+  [more on this](https://docs.google.com/document/d/1o37edJ7BEuTi3WOFEtKhZxpHpT97edf81LeTHu4BejE/edit#heading=h.ue6b1lthokz2)
+  
+![Screenshot from 2023-12-01 14-44-48](https://github.com/KRIISHSHARMA/5G-PHY-LAYER/assets/86760658/d0bda608-1402-41be-a8de-1947f71e0b38)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
