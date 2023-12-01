@@ -158,14 +158,43 @@ There are about 32 **MCS Indexes** (gNB determines the MCS index based on **CQI 
   
 ![Screenshot from 2023-12-01 14-44-48](https://github.com/KRIISHSHARMA/5G-PHY-LAYER/assets/86760658/d0bda608-1402-41be-a8de-1947f71e0b38)
 
+![Screenshot from 2023-12-01 15-15-06](https://github.com/KRIISHSHARMA/5G-PHY-LAYER/assets/86760658/cc6f695e-efa1-4c5b-aef6-0d30e86039e7)
 
+## CRC (cyclic redundancy check)
+- first we need a mechanism to detect errors on level of transport block
+- for this purpose a CRC (cyclic redundancy check) is calculated and added to the [transport block](https://www.techplayon.com/5g-nr-transport-block-size-tbs-calculation/#google_vignette) (a block of data, referred to as a Transport Block (TB))
+- In the receiver side this **CRC** can be used to detect any error in the TB level and request retransmission if TB is fully corrupt
+- The size of CSC varies
+  1. A 24 bit **CRC** is used for payloads larger than 3824 bits
+  2. For a smaller payload 16 bit **CRC** is used
+  
+![Screenshot from 2023-12-01 15-31-52](https://github.com/KRIISHSHARMA/5G-PHY-LAYER/assets/86760658/b8f70d35-0877-4370-a16d-04d3a2405558)
 
+## LDPC graph selection 
+- Now that we have an error detection mechanism in the TB level lets look into **error correction**
+- when it comes to channel coding which is used for **error correction** NR uses **LDPC**(low density parity check)
+- The **LDPC** is mainly used for data channels/traffic channels and **polar coding** is used for control channels
+- since this is an example of **PDSCH** we will look at **LDPC**
+- The **LDPC** uses a parameter called base graph that governs the coding process
+- the **LDPC** base graph type is determined by 2 parameters
+  1. Size of TB
+  2. Coding rate
 
+- NR supports 2 **LDPC** base graph
+  1. when the size of TB and coding rate is above a certain threshhold then base graph 1 is used . Base graph 1 has matrix size of 46x68 entries and it is used for large transport blocks or high coding rates
+  2. 2nd Base graph with 42x52 is used for small TB or lower coding rates 
 
+![Screenshot from 2023-12-01 15-45-17](https://github.com/KRIISHSHARMA/5G-PHY-LAYER/assets/86760658/7a185ee2-8714-4bf5-85c7-968bd329c002)
 
+## CODE BLOCK SEGMENTATION 
+- Next the TB can get quite big but the **LDPC** has a maximum code block size to limit the computational complexity
+- So the TB greter than that limit has to be segmented into smaller blocks called **code blocks** before the **LDPC coding** can be performed
+- So along with selecting **base graph** the TB is segmented into size of **code block** and a **CRC** is added to each **code block**
+- This segmentation is nesseccary before **LDPC coding** can be applied cause the TB itself can be too big to perform **LDPC** on it 
+-  The **CRC** on code block might seem redundant compared **CRC** that we added in TB level but NR supports retransmiting just the erroneous (incorrect) code block instead of retransmitting the whole TB
+-  For this purpose we need to detect errors not only on the whole TB but if it is a small error we can say exactly which code block the error is in so we need an error detection mechanism that is granular to the extent of code block level for this purpose we add CRC to each code block 
 
-
-
+![Screenshot from 2023-12-01 16-02-54](https://github.com/KRIISHSHARMA/5G-PHY-LAYER/assets/86760658/c9385637-755d-447c-993e-a49c025537ec)
 
 
 
