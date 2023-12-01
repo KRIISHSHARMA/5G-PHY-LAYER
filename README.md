@@ -129,5 +129,17 @@ There are about 32 **MCS Indexes** (gNB determines the MCS index based on **CQI 
 ![NR_Numerology_FrameStructure_u_4__NormalCP_38_211_01](https://github.com/KRIISHSHARMA/5G-PHY-LAYER/assets/86760658/073fe071-a486-4b64-8c4c-76e2fef16b43)
 
 ## RESOUCE GRID 
+- 5G has more flexibility in the duration of different transmissions. The time domain can be altered based on the need. E.g. if a particular activity needs high throughput, it can be scheduled for multiple symbols and if it requires low latency, only fewer symbols will be allocated. 
+- The number of Resource Blocks varies with numerology. Resource Block is defined as 12 consecutive subcarriers in the frequency domain. 
 
+![NR_Resource_Grid_01](https://github.com/KRIISHSHARMA/5G-PHY-LAYER/assets/86760658/472fd472-fb86-4478-9837-1fbb3f926b11)
+![Screenshot from 2023-12-01 08-20-29](https://github.com/KRIISHSHARMA/5G-PHY-LAYER/assets/86760658/bf887506-a1b4-4e3c-bbf4-7a5fa5c75fcd)
 
+- The maximum number of Resource blocks for DL and UL are defined below
+
+![Screenshot from 2023-12-01 08-28-27](https://github.com/KRIISHSHARMA/5G-PHY-LAYER/assets/86760658/a0aa5a4f-940a-4a2f-ae35-736c7ce9a121)
+![Screenshot from 2023-12-01 08-28-27](https://github.com/KRIISHSHARMA/5G-PHY-LAYER/assets/86760658/b0aeeb1a-2acc-461b-a3f0-7e4efe16593e)
+
+- **RF SPECTRUM**
+  - Channel Bandwidth(CBW) is about [ N_RB x NumOfSubcarrier x SCS + GuardBand x 2 ]
+- [for estimating RF bandwidth](https://www.sharetechnote.com/html/5G/5G_FR_Bandwidth.html#Spectrum_and_Bandwidth)
