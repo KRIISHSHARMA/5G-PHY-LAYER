@@ -270,6 +270,64 @@ There are about 32 **MCS Indexes** (gNB determines the MCS index based on **CQI 
 
 ![64](https://github.com/KRIISHSHARMA/5G-PHY-LAYER/assets/86760658/84fd14cc-8f8f-4414-a03a-58ac5fc1eb11)
 
+## channel and trasmission bandwidths
+- the radio bandwidth of the channel that is being used by an operator in a given gNB depends upon 2 factors
+  1. how much total bandwidth has been assigned by the regulator to the operator
+  2. second , out of that total bandwidth how much bandwidth has been used by the operator in this gNB , that bandwidth is called **channel bandwidth(MHz)**
+ 
+- this channel bandwidth includes guardbands so that the transmission that are being made in this channel do not interfare with the adjacent frequency channels 
+[look in to this](https://dsp.stackexchange.com/questions/78694/what-is-the-difference-between-a-guard-band-and-a-cyclic-prefix-in-ofdm#:~:text=In%20contrast%20the%20guard%20interval,generated%20in%20the%20modulation%20process.)
+
+
+- when you remove gaurdbands from channel bandwidths you get **Transmission Bandwidth Configuration N<sub>RB</sub> (total number of available resource block that are there in a gNB that can be used for transmission) [RB]**
+- out of that Transmission Bandwidth Configuration at a time there may be a subset of the resource block that are actually being used for the transmission
+- these Active resouce blocks depend on time of day (more when more calls , less at night necause of less load)
+  
+![Screenshot from 2023-11-24 19-14-41](https://github.com/KRIISHSHARMA/5G_TECHNOLOGY_ARCHITECTURE_AND_PROTOCOLS/assets/86760658/20f6c94b-68c2-435a-8d88-4e1754ad93dd)
+
+## maximum transmission bandwidth configuration (FR1)
+- channel bandwidth lies between 5 and 100 MHZ in frequency range 1
+- and if we are using min bandwidth as the gaurdband so the maximum transmission bandwidth or in other word maximum number of resource blocks that are available for transmission they depend upon channel bandwidth
+
+![Screenshot from 2023-11-24 19-21-52](https://github.com/KRIISHSHARMA/5G_TECHNOLOGY_ARCHITECTURE_AND_PROTOCOLS/assets/86760658/3fa92aef-3742-418a-8983-8c604fefaca9)
+
+
+- as we increase the bandwidth the resource blocks are increasing
+- we cannot use the 15KHz with 60 MHZ bandwidth cause this is a very high bandwidth
+- as we increase SCS from 15KHz to 30 KHz we see that we can now use 60MHz or more bandwidths but `they are less than the 15KHz SCS`
+- in 60KHz spacing 5MHz is not available cause 5MHz channel bandwidth is small for this 60KHz SCS 
+
+## maximum transmission bandwidth configuration (FR2)
+- channel bandwidth is between 50 and 400 MHz in frequency range 2
+
+![Screenshot from 2023-11-24 19-30-12](https://github.com/KRIISHSHARMA/5G_TECHNOLOGY_ARCHITECTURE_AND_PROTOCOLS/assets/86760658/24361027-9063-4f02-be2b-529e03839529)
+
+
+## Reference frequency (F<sub>ref</sub>)
+- in individual channel there is a centre frequency of this channel which is called the Reference frequency (F<sub>ref</sub>)
+- this reference frequency has an assosiated number which is called NR-Absolute Radio Frequency channel number (N<sub>ref</sub>)
+- **NR-ARFCN** is used to identify this channel
+
+![Screenshot from 2023-11-24 19-41-47](https://github.com/KRIISHSHARMA/5G_TECHNOLOGY_ARCHITECTURE_AND_PROTOCOLS/assets/86760658/6a40533c-51c6-4376-993b-0b2326cb5ada)
+
+- the operator may decide instead of using a channel in a gNB it wants to use another channel in that gNB only
+- but in these 2 channels the bandwidth is the same but the frequencies are different as a result the center frequency or refernece frequency has changed
+- therefore associated NR-ARFC will also changed
+
+![Screenshot from 2023-11-24 19-45-44](https://github.com/KRIISHSHARMA/5G_TECHNOLOGY_ARCHITECTURE_AND_PROTOCOLS/assets/86760658/62ef6f50-5c65-461a-b380-1d8c49f52a75)
+
+## reference frequency calculation F<sub>ref</sub>
+![Screenshot from 2023-11-24 19-47-28](https://github.com/KRIISHSHARMA/5G_TECHNOLOGY_ARCHITECTURE_AND_PROTOCOLS/assets/86760658/e48cd536-6c5e-42f2-9935-e5a939341c92)
+
+- global raster is the min distance in terms of frequency that can be there between reference frequencies
+- channel raster is the minimum distance between center frequencies of two channels 
+
+## Difference between global and channel Raster 
+- above 3 GHz , every refernce frequency can act as the center frequency for the channel that means channel raster and global raster is same
+- below 3 GHz , the global raster is 5KHz that means minimum distance between 2 between two reference frequenies is 5KHz but channel raster can be 15KHz or 100KHz
+
+![Screenshot from 2023-11-24 21-12-46](https://github.com/KRIISHSHARMA/5G_TECHNOLOGY_ARCHITECTURE_AND_PROTOCOLS/assets/86760658/d122dd44-b9eb-4c9d-ac4b-895b19b6e3ab)
+
 
 
 
