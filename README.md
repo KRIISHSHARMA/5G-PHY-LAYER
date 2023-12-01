@@ -109,5 +109,25 @@ There are about 32 **MCS Indexes** (gNB determines the MCS index based on **CQI 
     - Max RI means "No Correlation between the antenna", "No interference to each other", "Best Performance". For example, in case of 2x2 MIMO, the RI value can be 1 or 2. When the value 2 in this case means "No Correlation between the antenna", "No interference to each other", "Best Performance". If the value is 1, it implies that the signal from the two Tx antenna is percieved by UE to be like single signal from single Antenna, which means the worst performance. [reference](https://www.sharetechnote.com/html/Handbook_LTE_RI.html)
 
 ## FRAME STRUCTURE 
+- Data(UL/DL) is transmitted in the form of radio frames in the air.
+-  the 5G frame structure is based on a slot and symbol-based design. This means the 5G network can dynamically adjust the duration of each time slot based on the service's needs. A data-heavy service might get longer slots, while services needing quick response times, like remote surgery or smart factories, might be allocated shorter slots. This flexibility improves the efficiency and responsiveness of the 5G network.
+-  Each radio frame of a duration of 10ms is split into 10 subfarmes each of duration 1 ms
+-  Each 1ms sub frame is then spit into slots , the number of slots depend upon the numerology (1 subframe = 2^u slots)
+-  Now each slot contains symobls , number of symbols depend on the type of CP used (extended = 12 , normal = 14)
+
+![Screenshot from 2023-12-01 07-45-34](https://github.com/KRIISHSHARMA/5G-PHY-LAYER/assets/86760658/24d86347-2109-4397-a84d-55cd126a2d06)
+
+## NUMEROLOGY - SUBCARRIER SPACING 
+- Numerology refers to the set of parameters that define the physical layer structure , specifically , the subcarrier spacing , symbol duration , and cyclic prefix
+
+![NR_Numerology_SubCarrierSpacing_38_211_v17_6_0_01](https://github.com/KRIISHSHARMA/5G-PHY-LAYER/assets/86760658/a76636d0-bbc0-4e5c-be2d-a20337927a6b)
+
+- Slot length gets different depending on numerology , i.e slot length gets shorter as SCS get swider
+
+![NR_Numerology_SlotLength_38_211_01](https://github.com/KRIISHSHARMA/5G-PHY-LAYER/assets/86760658/289d535b-e046-46e7-b0be-a8b2000f5908)
+![Screenshot from 2023-12-01 08-02-41](https://github.com/KRIISHSHARMA/5G-PHY-LAYER/assets/86760658/682e6a57-e6c3-4db4-9ce7-056f69c935d9)
+![NR_Numerology_FrameStructure_u_4__NormalCP_38_211_01](https://github.com/KRIISHSHARMA/5G-PHY-LAYER/assets/86760658/073fe071-a486-4b64-8c4c-76e2fef16b43)
+
+## RESOUCE GRID 
 
 
