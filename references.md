@@ -4,3 +4,4 @@
 - [MSC TABLE](https://www.youtube.com/watch?v=QBiBPbME5tY)
 - [Steps to determin Qm, Code Rate, RV and TBS](https://www.sharetechnote.com/html/5G/5G_MCS_TBS_CodeRate.html)
 - [CSI](https://www.sharetechnote.com/html/5G/5G_CSI_Report.html)
+- [Frame strucutre](https://www.sharetechnote.com/html/5G/5G_FrameStructure.html)
