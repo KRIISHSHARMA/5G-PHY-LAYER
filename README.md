@@ -25,7 +25,7 @@ more points, and therefore will lead to increased number of errors for a fixed S
 ![Screenshot from 2023-11-29 18-14-49](https://github.com/KRIISHSHARMA/5G-PHY-LAYER/assets/86760658/03072a33-8ec9-470e-a685-ffa78e85067c)
 
 ### CQI (channel quality indicator)
-- gNB determines the MCS index based on CQI index that gNB got from UE to define the possible modulation orders and coding schemes to use for data transmission. Getting a higher CQI index indicates a better signal quality, and the gNB can transmit a larger transport block size.
+- gNB determines the MCS index based on CQI index that gNB got from UE to define the possible modulation orders and coding schemes to use for data transmission. Getting a higher CQI index indicates a better signal quality, and the gNB can transmit a larger [transport block size](https://www.techplayon.com/5g-nr-transport-block-size-tbs-calculation/).
   
 - However, since CQI is a 4-bit integer ranging between 0 to 15 and MCS is a 5-bit integer ranging between 0 to 31, there will be more than one MCS value that corresponds to a certain CQI value in many cases. Therefore, the scheduler must determine which MCS value corresponds to the received CQI value
 
