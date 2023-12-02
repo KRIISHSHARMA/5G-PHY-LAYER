@@ -145,9 +145,6 @@ There are about 32 **MCS Indexes** (gNB determines the MCS index based on **CQI 
 [for estimating RF bandwidth](https://www.sharetechnote.com/html/5G/5G_FR_Bandwidth.html#Spectrum_and_Bandwidth)
 - [For calculating RBs](https://www.techplayon.com/nr-resource-block-definition-and-rbs-calculation/)
 
-### MINI SLOTS
-
-
 ## PHYSICAL LAYER PROCESSING
 
 - DCI provides device with nesseccary info and decoding of DL data
