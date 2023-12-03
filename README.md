@@ -140,11 +140,24 @@ There are about 32 **MCS Indexes** (gNB determines the MCS index based on **CQI 
 ![Screenshot from 2023-12-01 08-28-27](https://github.com/KRIISHSHARMA/5G-PHY-LAYER/assets/86760658/a0aa5a4f-940a-4a2f-ae35-736c7ce9a121)
 ![Screenshot from 2023-12-01 08-28-27](https://github.com/KRIISHSHARMA/5G-PHY-LAYER/assets/86760658/b0aeeb1a-2acc-461b-a3f0-7e4efe16593e)
 ![Screenshot from 2023-12-03 09-26-35](https://github.com/KRIISHSHARMA/5G-PHY-LAYER/assets/86760658/2ace5303-cefa-4275-a569-e78119a71aa1)
+![miniSlots](https://github.com/KRIISHSHARMA/5G-PHY-LAYER/assets/86760658/25b5e1ba-0392-44d5-a13d-d859ec95b225)
+
 
 ### RF SPECTRUM
 - Channel Bandwidth(CBW) is about [ N_RB x NumOfSubcarrier x SCS + GuardBand x 2 ]
 [for estimating RF bandwidth](https://www.sharetechnote.com/html/5G/5G_FR_Bandwidth.html#Spectrum_and_Bandwidth)
 - [For calculating RBs](https://www.techplayon.com/nr-resource-block-definition-and-rbs-calculation/)
+
+### SLOT FORMAT
+- A slot can be classified as DL (all symbols are dedicated for DL) or UL(all symbols are dedicaed for UL) or mixed UL and DL transmissions
+- In the case of FDD, all symbols within a slot for a downlink carrier are used for downlink transmissions and all symbols within a slot for an uplink carrier are used for uplink transmissions.
+- NR TDD uses flexible slot configuration.  OFDM symbols in a slot can be classified as 'downlink', 'flexible', or 'uplink'. Flexible symbol can be configured either for uplink or for downlink transmissions.
+  1. D: used for DL transmission
+  2. U: used for UL transmission
+  3. F: can be used for UL transmission or DL transmission or Guard period or Reserved resource
+- [more on this](http://howltestuffworks.blogspot.com/2019/11/5g-nr-time-domain-slots-and-slot-formats.html)
+  ![Screenshot from 2023-12-03 09-45-50](https://github.com/KRIISHSHARMA/5G-PHY-LAYER/assets/86760658/4865b60e-136f-4f38-a3be-466da574fbc5)
+
 
 ## PHYSICAL LAYER PROCESSING
 
