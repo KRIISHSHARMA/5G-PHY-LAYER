@@ -128,6 +128,8 @@ There are about 32 **MCS Indexes** (gNB determines the MCS index based on **CQI 
 ![Screenshot from 2023-12-01 08-02-41](https://github.com/KRIISHSHARMA/5G-PHY-LAYER/assets/86760658/682e6a57-e6c3-4db4-9ce7-056f69c935d9)
 ![NR_Numerology_FrameStructure_u_4__NormalCP_38_211_01](https://github.com/KRIISHSHARMA/5G-PHY-LAYER/assets/86760658/073fe071-a486-4b64-8c4c-76e2fef16b43)
 
+- [good resource](https://www.youtube.com/watch?v=nw8wvd_X4HE)
+- **SIZE OF RB = 12 x (SCS)** eg size of RB with SCS = 15 --> 12x15= **180KHz**
 ## RESOUCE GRID 
 - 5G has more flexibility in the duration of different transmissions. The time domain can be altered based on the need. E.g. if a particular activity needs high throughput, it can be scheduled for multiple symbols and if it requires low latency, only fewer symbols will be allocated. 
 - The number of Resource Blocks varies with numerology. Resource Block is defined as 12 consecutive subcarriers in the frequency domain. 
