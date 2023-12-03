@@ -147,6 +147,7 @@ There are about 32 **MCS Indexes** (gNB determines the MCS index based on **CQI 
 - Channel Bandwidth(CBW) is about [ N_RB x NumOfSubcarrier x SCS + GuardBand x 2 ]
 [for estimating RF bandwidth](https://www.sharetechnote.com/html/5G/5G_FR_Bandwidth.html#Spectrum_and_Bandwidth)
 - [For calculating RBs](https://www.techplayon.com/nr-resource-block-definition-and-rbs-calculation/)
+- **SIZE OF RB = 12 x (SCS)** eg size of RB with SCS = 15 --> 12x15= **180KHz**
 
 ### SLOT FORMAT
 - A slot can be classified as DL (all symbols are dedicated for DL) or UL(all symbols are dedicaed for UL) or mixed UL and DL transmissions
